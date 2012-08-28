@@ -1,0 +1,13 @@
+%section
+  %hgroup
+    %h1 Programs
+  %table.table
+    %thead
+      %tr
+        %th Program
+        %td Last update
+    %tbody
+      - @programs.each do |program|
+        %tr
+          %td= link_to program.name, program
+          %td= t(program.tvdb_last_update, format: :short)

@@ -10,6 +10,7 @@ group :assets do
   gem 'therubyracer', require: 'v8'
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'bootstrap-sass'
 end
 
 gem 'jquery-rails'
@@ -18,3 +19,6 @@ group :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
 end
+
+gem 'haml'
+gem 'her'
